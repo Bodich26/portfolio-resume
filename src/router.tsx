@@ -8,18 +8,23 @@ import Drivich from "./pages/drivich";
 import Eternal from "./pages/eternal";
 import Todos from "./pages/todos";
 
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainLayout />,
-    children: [
-      { index: true, element: <App /> },
-      { path: "lunza", element: <Lunza /> },
-      { path: "nikey", element: <Nikey /> },
-      { path: "drivich", element: <Drivich /> },
-      { path: "eternal", element: <Eternal /> },
-      { path: "todos", element: <Todos /> },
-      { path: "carmusc", element: <CarMusc /> },
-    ],
-  },
-]);
+const basename = "/vite-petproject-hub/";
+
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <App /> },
+        { path: "lunza", element: <Lunza /> },
+        { path: "nikey", element: <Nikey /> },
+        { path: "drivich", element: <Drivich /> },
+        { path: "eternal", element: <Eternal /> },
+        { path: "todos", element: <Todos /> },
+        { path: "carmusc", element: <CarMusc /> },
+      ],
+    },
+  ],
+  { basename },
+);
