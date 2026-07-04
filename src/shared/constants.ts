@@ -17,43 +17,43 @@ export const mySkills: ISkill[] = [
   { id: 8, name: "Zustand", icon: "skills/zustand.svg" },
   { id: 9, name: "Tanstack", icon: "skills/tanstack.svg" },
   { id: 10, name: "Next", icon: "skills/next.svg" },
-  { id: 11, name: "Tailwind", icon: "skills/tailwind.svg" },
-  { id: 12, name: "Figma", icon: "skills/figma.svg" },
+  { id: 11, name: "Axios", icon: "skills/axios.svg" },
+  { id: 12, name: "Prisma", icon: "skills/prisma.svg" },
+  { id: 13, name: "Supabase", icon: "skills/supabase.svg" },
+  { id: 14, name: "Tailwind", icon: "skills/tailwind.svg" },
+  { id: 15, name: "Figma", icon: "skills/figma.svg" },
+  { id: 16, name: "ShadCn", icon: "skills/shadcn.svg" },
+  { id: 17, name: "ChakraUi", icon: "skills/chakra.svg" },
+  { id: 18, name: "GitHub", icon: "skills/github.svg" },
 ];
 
 export const myMiniProjects: IMyMiniProjects[] = [
   {
     id: 1,
-    title: "Lunza",
-    description: "Типа социальная сеть с фичами",
-    link: "/lunza",
-  },
-  {
-    id: 2,
     title: "Nikey",
     description: "Интернет магазин кроссовок",
     link: "/nikey",
   },
   {
-    id: 3,
+    id: 2,
     title: "Drivich-V2",
     description: "Перекупы автомобилей Porsche",
     link: "/drivich",
   },
   {
-    id: 4,
+    id: 3,
     title: "Eternal Abyss",
     description: "Cайт музыкльной метал группы",
     link: "/eternal",
   },
   {
-    id: 5,
+    id: 4,
     title: "Todos",
     description: "Красивая Todo c анимашкой",
     link: "/todos",
   },
   {
-    id: 6,
+    id: 5,
     title: "Car Musc",
     description: "Простая вёрстка сайта из 2021",
     link: "/carmusc",
@@ -123,35 +123,6 @@ export const mySocial: ISocial[] = [
 export const myFullProjects: IMyFullProjects[] = [
   {
     id: 1,
-    title: "Lunza",
-    subtitle: "Типа социальная сеть с фичами",
-    idea: "Я хотел создать социальную платформу, вдохновлённую Instagram и Pinterest, но с акцентом на личное пространство и творческое развитие. Пользователь может создавать публикации на своей странице, оставлять комментарии, ставить лайки себе и другим пользователям и общаться через личные сообщения.",
-    implementation:
-      "Проект был создан как full-stack приложение с использованием современных инструментов разработки. На данный момент реализован следующий функционал: регистрация и авторизация пользователей, страница профиля с возможностью добавления постов с изображениями, система комментариев под публикациями и возможность ставить лайки себе и другим пользователям. Также реализовано переключение темы интерфейса между светлой и тёмной версиями. Дизайн интерфейса был разработан мной самостоятельно — от структуры страниц и пользовательского сценария до визуальной стилистики и адаптивной вёрстки.",
-    frontend: [
-      "Next",
-      "Ts",
-      "Tanstack Query",
-      "Zustand",
-      "React Hook Form",
-      "Zod",
-      "Tailwind",
-      "Chakra UI",
-      "Lucide Icon",
-      "FSD Архитектура Проекта",
-    ],
-    backend: ["Supabase", "Supabase Auth", "Rest API", "Server Actions"],
-    githubUrl: "https://github.com/Bodich26/next-lunza",
-    liveUrl: "https://next-lunza.vercel.app/",
-    screenshots: [
-      "projects/lunza/1.jpg",
-      "projects/lunza/2.jpg",
-      "projects/lunza/3.jpg",
-      "projects/lunza/4.jpg",
-    ],
-  },
-  {
-    id: 2,
     title: "Nikey",
     subtitle: "Интернет магазин кроссовок",
     idea: "Я хотел создать интернет-магазин кроссовок с акцентом не только на продажу, но и на презентацию бренда. Идея заключалась в том, чтобы объединить коммерческую платформу с медийной составляющей: показать историю и философию бренда, добавить новостной раздел о разработке новых моделей, публиковать актуальные скидки и делиться свежей информацией о релизах. Проект задумывался как современная платформа, где пользователь может не просто купить кроссовки, а погрузиться в атмосферу бренда.",
@@ -181,7 +152,7 @@ export const myFullProjects: IMyFullProjects[] = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "Drivich-V2",
     subtitle: "Перекупы автомобилей Porsche",
     idea: "Улучшенная версия проекта Drivich, переработанная с упором на архитектуру приложения, пользовательский опыт и расширение функциональности. Основная цель — реализовать базовую логику e-commerce платформы: Каталог автомобилей, Систему авторизации пользователей и процесс оформления заказа. Проект задумывался как упрощённая модель интернет-магазина, где пользователь может ознакомиться с ассортиментом, выбрать подходящий автомобиль и пройти полный путь от просмотра до оформления покупки.",
@@ -211,7 +182,7 @@ export const myFullProjects: IMyFullProjects[] = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     title: "Eternal Abyss",
     subtitle: "Cайт музыкльной metal-группы",
     idea: "Идея проекта заключалась в том, чтобы создать бренд-сайт музыкальной metal-группы, который задумывался как хаб для фанатов. Сайт бы объединял актуальную информацию о группе, релизы, историю её создания, важную информацию и возможность приобрести мерч.",
@@ -237,7 +208,7 @@ export const myFullProjects: IMyFullProjects[] = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: "Todos",
     subtitle: "Красивая Todo c анимашкой",
     idea: "Проект Todos был создан как небольшой pet-проект для портфолио. Реализовать простое приложение для управления задачами, визуальными анимациями и удобством использования.",
@@ -255,7 +226,7 @@ export const myFullProjects: IMyFullProjects[] = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     title: "Car Musc",
     subtitle: "Простая вёрстка сайта из 2021",
     idea: "Проект представляет собой одну из первых работ, созданных в 2021 году в процессе обучения вёрстке сайтов. Основная цель заключалась в том, чтобы освоить базовые принципы вёрстки и научиться создавать структурированные, адаптивные сайты.",
