@@ -23,11 +23,23 @@ export const AboutWidget = () => {
         развиваюсь через самообучение и практику. Ищу команду, в которой смогу
         расти, вносить вклад в развитие продукта и бизнеса.
       </p>
-      <CustomButton
-        text={"Скачать CV"}
-        href="docs/Zhukov-Bogdan-Resume.pdf"
-        download
-      />
+      <div className="flex flex-col gap-2 justify-between items-center">
+        <span className="text-md text-neutral-300/50">
+          Разные варианты резюме CV
+        </span>
+        <div className="flex gap-3 justify-between items-center">
+          <CustomButton
+            text={"CV №1"}
+            href="docs/Zhukov_Bogdan_CV_№1.pdf"
+            download
+          />
+          <CustomButton
+            text={"CV №2"}
+            href="docs/Zhukov_Bogdan_CV_№2.pdf"
+            download
+          />
+        </div>
+      </div>
     </section>
   );
 };
