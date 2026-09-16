@@ -34,7 +34,7 @@ export interface IMyFullProjects {
   title: string;
   subtitle: string;
   idea: string;
-  implementation: string;
+  implementation: string[];
   frontend: string[];
   backend: string[];
   liveUrl: string;

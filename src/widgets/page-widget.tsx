@@ -66,12 +66,17 @@ export const PageWidget = ({
         </p>
       </div>
       <div className="space-y-4">
-        <h2 className="text-4xl font-bold text-purple-400 uppercase tracking-wide">
+        <h3 className="text-4xl font-bold text-purple-400 uppercase tracking-wide">
           Реализация
-        </h2>
-        <p className="text-lg md:text-xl text-neutral-300 leading-relaxed">
-          {implementation}
-        </p>
+        </h3>
+        <ul className="space-y-3 text-lg md:text-xl text-neutral-300">
+          {implementation.map((item, index) => (
+            <li key={index} className="flex items-start gap-3">
+              <span className="text-purple-400 font-bold select-none">•</span>
+              <span className="leading-relaxed">{item}</span>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="space-y-8">
         <h2 className="text-4xl font-bold text-purple-400 uppercase tracking-wide">

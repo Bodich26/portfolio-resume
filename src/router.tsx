@@ -1,11 +1,10 @@
 import { createBrowserRouter } from "react-router";
 import App from "./App";
 import MainLayout from "./main-layout";
-import CarMusc from "./pages/car-musc";
 import Nikey from "./pages/Nikey";
 import Drivich from "./pages/Drivich";
 import Eternal from "./pages/Eternal";
-import Todos from "./pages/Todos";
+import Grind from "./pages/Grind";
 
 const basename = "/portfolio-resume/";
 
@@ -19,8 +18,7 @@ export const router = createBrowserRouter(
         { path: "nikey", element: <Nikey /> },
         { path: "drivich", element: <Drivich /> },
         { path: "eternal", element: <Eternal /> },
-        { path: "todos", element: <Todos /> },
-        { path: "carmusc", element: <CarMusc /> },
+        { path: "grind", element: <Grind /> },
       ],
     },
   ],
